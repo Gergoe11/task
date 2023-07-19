@@ -1,0 +1,27 @@
+{
+  "name": "interview_task",
+  "version": "1.0.0",
+  "description": "ui automation task for interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gergoe11/task.git"
+  },
+  "keywords": [
+    "test",
+    "automation",
+    "cypress"
+  ],
+  "author": "Gergely Kadar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gergoe11/task/issues"
+  },
+  "homepage": "https://github.com/Gergoe11/task#readme",
+  "devDependencies": {
+    "cypress": "^12.17.1"
+  }
+}
