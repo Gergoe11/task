@@ -2,7 +2,7 @@ export default {
     url: 'https://www.epam.com/careers',
     consentButton: '#onetrust-accept-btn-handler',
     header: '.header__content',
-    searchKey: '#new_form_job_search-keyword',
+    searchKeyBox: '#new_form_job_search-keyword',
     locationFilter: '.select2-selection__rendered',
     skillFilter: '.default-label',
     refiningFilters: '.job-search__filter-items',

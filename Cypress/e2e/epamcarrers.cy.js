@@ -13,7 +13,7 @@ describe('EPAM Careers', () => {
     });
 
     it('should display the search filters of the careers page', () => {
-        cy.get(careerpage_selectors.searchKey).should('be.visible');
+        cy.get(careerpage_selectors.searchKeyBox).should('be.visible');
         cy.get(careerpage_selectors.locationFilter).should('be.visible');
         cy.get(careerpage_selectors.skillFilter).should('be.visible');
     });
@@ -24,14 +24,14 @@ describe('EPAM Careers', () => {
     });
 
     it('should display the chosen search term', () => {
-        cy.get(careerpage_selectors.searchKey).type(careerdata.validJob);
+        cy.get(careerpage_selectors.searchKeyBox).type(careerdata.validJob);
 
-        cy.get(careerpage_selectors.searchKey)
+        cy.get(careerpage_selectors.searchKeyBox)
             .should('have.value', careerdata.validJob);
     });
 
     it('should search with valid search term and show list of jobs', () => {
-        cy.get(careerpage_selectors.searchKey).type(careerdata.validJob);
+        cy.get(careerpage_selectors.searchKeyBox).type(careerdata.validJob);
 
         cy.get(careerpage_selectors.submitButton)
             .click();
@@ -44,7 +44,7 @@ describe('EPAM Careers', () => {
 
 
     it('should should show error message when typing invalid search term', () => {
-        cy.get(careerpage_selectors.searchKey).type(careerdata.invalidJob);
+        cy.get(careerpage_selectors.searchKeyBox).type(careerdata.invalidJob);
 
         cy.get(careerpage_selectors.submitButton)
             .click();
@@ -60,7 +60,7 @@ describe('EPAM Careers', () => {
     });
 
     it('should should show error message when typing special characters', () => {
-        cy.get(careerpage_selectors.searchKey).type(careerdata.specialChars);
+        cy.get(careerpage_selectors.searchKeyBox).type(careerdata.specialChars);
 
         cy.get(careerpage_selectors.submitButton)
             .click();
